@@ -1,112 +1,27 @@
-[简体中文](README_ZH.md)
+# CoCre
+# Collective Creativity
 
-<h1> <img src="https://raw.githubusercontent.com/go-gitea/gitea/master/public/img/gitea-192.png" alt="logo" width="30" height="30"> Gitea - Git with a cup of tea</h1>
+## I have this crazy idea:
 
-[![Build Status](https://drone.gitea.io/api/badges/go-gitea/gitea/status.svg)](https://drone.gitea.io/go-gitea/gitea)
-[![Join the Discord chat at https://discord.gg/NsatcWJ](https://img.shields.io/discord/322538954119184384.svg)](https://discord.gg/NsatcWJ)
-[![](https://images.microbadger.com/badges/image/gitea/gitea.svg)](https://microbadger.com/images/gitea/gitea "Get your own image badge on microbadger.com")
-[![codecov](https://codecov.io/gh/go-gitea/gitea/branch/master/graph/badge.svg)](https://codecov.io/gh/go-gitea/gitea)
-[![Go Report Card](https://goreportcard.com/badge/code.gitea.io/gitea)](https://goreportcard.com/report/code.gitea.io/gitea)
-[![GoDoc](https://godoc.org/code.gitea.io/gitea?status.svg)](https://godoc.org/code.gitea.io/gitea)
-[![GitHub release](https://img.shields.io/github/release/go-gitea/gitea.svg)](https://github.com/go-gitea/gitea/releases/latest)
-[![Help Contribute to Open Source](https://www.codetriage.com/go-gitea/gitea/badges/users.svg)](https://www.codetriage.com/go-gitea/gitea)
-[![Become a backer/sponsor of gitea](https://opencollective.com/gitea/tiers/backers/badge.svg?label=backers&color=brightgreen)](https://opencollective.com/gitea)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Crowdin](https://badges.crowdin.net/gitea/localized.svg)](https://crowdin.com/project/gitea)
+  A 'GIT' like distributed version-control system, but designed for coordinating work among creators, enable collaborative open source creative projects.
 
-## Purpose
+### OK, just to prove I'm not THAT crazy, let me list out what I think why this is so difficult:
 
-The goal of this project is to make the easiest, fastest, and most
-painless way of setting up a self-hosted Git service.
-Using Go, this can be done with an independent binary distribution across
-**all platforms** which Go supports, including Linux, macOS, and Windows
-on x86, amd64, ARM and PowerPC architectures.
-Want to try it before doing anything else?
-Do it [with the online demo](https://try.gitea.io/)!
-This project has been
-[forked](https://blog.gitea.io/2016/12/welcome-to-gitea/) from
-[Gogs](https://gogs.io) since 2016.11 but changed a lot.
+  1. Unlike git for open source codes, where the difference between good and bad is usually pretty clear, thus contributors can eventually reach consensus, creative project, in its very own nature, is subjective. How do you unite people?
+  Basically, there are a thousand Hamlets in a thousand people's eyes.
 
-## Building
+  2. Code, in its own native format (pre-compiled that is), is designed to be readable, a .py file can be distributed, viewed, edited and commented entirely in its own format, thus making a centralized web interface easy to build. Arts, varies hugely between different media, a manga could have a lot images, svg and text, a visual art piece could be one big .psd file. Those files are not readable in its own native format, very hard to do git like version control, and even harder to view, share and comment on a web interface.
 
-From the root of the source tree, run:
+  3. Artists are not nerds like us coders, even I find the git system unintuitive at times, let alone people with zero programming knowledge. How do we make an artistic git that is not only intuitive for pro artists, but EVERYONE?
 
-    TAGS="bindata" make generate all
+### So, this is what I am proposing:
 
-More info: https://docs.gitea.io/en-us/install-from-source/
+  1. The fundamental principle, regarding how to settle differences regarding differences between creative views, shouldn't be focused on what is 'good or bad', but:
+      Share, Parallelism, Acceptance and Freedom.
+    (I know this sounds hippie, but more details in SPAFprinciple.md)
 
-## Using
+  2. Limit the scope of this initial project, start by designing the system to focus on graphics projects (manga, illustration book, comics etc), with strong support for vector and raster files.
 
-    ./gitea web
+  3. Unlike git (a lightweight command line tool), this project should be built around a robust and intuitive graphical front-end (js), with a fast and scalable back-end (golang).
 
-NOTE: If you're interested in using our APIs, we have experimental
-support with [documentation](https://try.gitea.io/api/swagger).
-
-## Contributing
-
-Expected workflow is: Fork -> Patch -> Push -> Pull Request
-
-NOTES:
-
-1. **YOU MUST READ THE [CONTRIBUTORS GUIDE](CONTRIBUTING.md) BEFORE STARTING TO WORK ON A PULL REQUEST.**
-2. If you have found a vulnerability in the project, please write privately to **security@gitea.io**. Thanks!
-
-## Further information
-
-For more information and instructions about how to install Gitea, please look
-at our [documentation](https://docs.gitea.io/en-us/). If you have questions
-that are not covered by the documentation, you can get in contact with us on
-our [Discord server](https://discord.gg/NsatcWJ),
-or [forum](https://discourse.gitea.io/)!
-
-## Authors
-
-* [Maintainers](https://github.com/orgs/go-gitea/people)
-* [Contributors](https://github.com/go-gitea/gitea/graphs/contributors)
-* [Translators](options/locale/TRANSLATORS)
-
-## Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/gitea#backer)]
-
-<a href="https://opencollective.com/gitea#backers" target="_blank"><img src="https://opencollective.com/gitea/backers.svg?width=890"></a>
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/gitea#sponsor)]
-
-<a href="https://opencollective.com/gitea/sponsor/0/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/1/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/2/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/3/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/4/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/5/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/6/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/7/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/8/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/gitea/sponsor/9/website" target="_blank"><img src="https://opencollective.com/gitea/sponsor/9/avatar.svg"></a>
-
-## FAQ
-
-**How do you pronounce Gitea?**
-
-Gitea is pronounced [/ɡɪ’ti:/](https://youtu.be/EM71-2uDAoY) as in "gi-tea" with a hard g.
-
-**Why is this not hosted on a Gitea instance?**
-
-We're [working on it](https://github.com/go-gitea/gitea/issues/1029).
-
-## License
-
-This project is licensed under the MIT License.
-See the [LICENSE](https://github.com/go-gitea/gitea/blob/master/LICENSE) file
-for the full license text.
-
-## Screenshots
-Looking for an overview of the interface? Check it out!
-
-|![Dashboard](https://dl.gitea.io/screenshots/home_timeline.png)|![User Profile](https://dl.gitea.io/screenshots/user_profile.png)|![Global Issues](https://dl.gitea.io/screenshots/global_issues.png)|
-|:---:|:---:|:---:|
-|![Branches](https://dl.gitea.io/screenshots/branches.png)|![Web Editor](https://dl.gitea.io/screenshots/web_editor.png)|![Activity](https://dl.gitea.io/screenshots/activity.png)|
-|![New Migration](https://dl.gitea.io/screenshots/migration.png)|![Migrating](https://dl.gitea.io/screenshots/migration.gif)|![Pull Request View](https://image.ibb.co/e02dSb/6.png)
-![Pull Request Dark](https://dl.gitea.io/screenshots/pull_requests_dark.png)|![Diff Review Dark](https://dl.gitea.io/screenshots/review_dark.png)|![Diff Dark](https://dl.gitea.io/screenshots/diff_dark.png)|
+HW
