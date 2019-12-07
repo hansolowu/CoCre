@@ -1,6 +1,13 @@
 # CoCre
 # Collective Creativity
 
+  * Forked from gitea (gitea.io) but with CoCre flavor.
+  * A distributed version control system, like git, but build for collaborating works between artist/illustrators.
+  * Simplify the traditional git workflow, with consideration for non-programmers.
+  * New terminology for commands, more intuitive.
+  * More emphasis on web-base operation, as oppose to command-line operation.
+  * Better large file / binary file handling. 
+
 ## I have this crazy idea:
 
   A 'GIT' like distributed version-control system, but designed for coordinating work among creators, enable collaborative open source creative projects.
