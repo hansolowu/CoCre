@@ -1,26 +1,22 @@
 #Frontend:
 
-### A cocre flavored markdown
-To provide better presentation for KEYSTONE and discussion
-maybe a web editor tool?
+## CoCre specific template:
+ * rendering option for binary art files
+ * graphical preview
+ * file download
+ * file upload
 
-### Discussion board
-CHECKPOINT oriented, not issue oriented. Should be able to easily quote from works.
+## Convert 'Issues' to task board
+  * graphical preview + reference
+  * graphical proposal
+  * parallel listing all related pull request
 
-### Tree + Steps like file presentation
-Since progression is important, not just end product
 
-### keep resource/progression files, but de-cluster them
+## CoCre functions:
 
-### Parallel view on parallel works
 
-### SVG rendering
+#Backend:
 
-#Backend
+## LFS:
 
-### All the important git stuff, version control, backup etc
-
-### PSD file parser and possible Layer support
-
-### JS execution in SVG
-nvm use <img> tag
+## Merge collision avoidance
