@@ -1,4 +1,4 @@
-#Frontend:
+# Frontend:
 
 ## CoCre specific template:
  * rendering option for binary art files
@@ -15,7 +15,7 @@
 ## CoCre functions:
 
 
-#Backend:
+# Backend:
 
 ## LFS:
 
