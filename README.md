@@ -1,7 +1,7 @@
-# CoCre
+# Git for dream making
 # Collective Creativity
 
-  * Forked from gitea (gitea.io) but with CoCre flavor.
+  * Forked from gitea (gitea.io) but with DreamGit flavor.
   * A distributed version control system, like git, but build for collaborating works between artist/illustrators.
   * Simplify the traditional git workflow, with consideration for non-programmers.
   * New terminology for commands, more intuitive.
