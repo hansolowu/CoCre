@@ -1,4 +1,4 @@
-# Git for dream making
+# Git for Dream Making
 # Collective Creativity
 
   * Forked from gitea (gitea.io) but with DreamGit flavor.
