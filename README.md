@@ -1,12 +1,12 @@
-# Git for Dream Making
+# OPEN DREAM
 # Collective Creativity
 
-  * Forked from gitea (gitea.io) but with DreamGit flavor.
+  * Forked from gitea (gitea.io) but with OPEN DREAM flavor.
   * A distributed version control system, like git, but build for collaborating works between artist/illustrators.
   * Simplify the traditional git workflow, with consideration for non-programmers.
   * New terminology for commands, more intuitive.
   * More emphasis on web-base operation, as oppose to command-line operation.
-  * Better large file / binary file handling. 
+  * Better large file / binary file handling.
 
 ## I have this crazy idea:
 
